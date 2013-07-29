@@ -1,0 +1,46 @@
+{
+  "name": "grunt-awssum-deploy",
+  "description": "Deploy your static files to S3",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dustMason/grunt-awssum-deploy",
+  "author": {
+    "name": "Jordan Sitkin",
+    "email": "jordan@fiftyfootfoghorn.com",
+    "url": "http://jordansitkin.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dustMason/grunt-awssum-deploy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dustMason/grunt-awssum-deploy/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dustMason/grunt-awssum-deploy/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.coffee",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "awssum": "1.0",
+    "awssum-amazon-s3": "1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "s3",
+    "amazon",
+    "aws",
+    "awssum"
+  ]
+}
