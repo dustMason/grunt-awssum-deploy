@@ -39,6 +39,11 @@ Type: `String`
 
 The bucket to upload to, **mandatory**.
 
+#### options.connections
+Type: `Integer`
+
+How many concurrent connections to keep open while uploading to S3. Defaults to **3**.
+
 #### Note
 The project is based on [awssum](http://awssum.io), and uses code from a [gist](https://gist.github.com/chilts/3687910) by @chilts and @twhid.
 
@@ -51,7 +56,8 @@ grunt.initConfig({
       key: '<%= secret.awsKey %>',
       secret: '<%= secret.awsSecret %>',
       bucket: '<%= secret.awsBucket %>',
-      access: 'public-read'
+      access: 'public-read',
+      connections: 5
     },
     dist: {
       files: [{
