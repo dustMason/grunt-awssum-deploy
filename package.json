@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "awssum": "1.0",
-    "awssum-amazon-s3": "1.0"
+    "awssum-amazon-s3": "1.0",
+    "async": "> 0.1.0"
   },
   "devDependencies": {},
   "peerDependencies": {
