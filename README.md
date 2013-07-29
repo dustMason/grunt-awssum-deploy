@@ -40,7 +40,7 @@ Type: `String`
 The bucket to upload to, **mandatory**.
 
 #### Note
-The project is based on [awssum](http://awssum.io).
+The project is based on [awssum](http://awssum.io), and uses code from a [gist](https://gist.github.com/chilts/3687910) by @chilts and @twhid.
 
 ### Usage Examples
 
