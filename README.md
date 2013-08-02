@@ -77,3 +77,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## Release History
 * 2013-07-28   v0.1.0   First release
 * 2013-07-28   v0.1.1   Added async queue and connections option
+* 2013-08-01   v0.1.2   Automatically set ContentType property on S3 using mime package
