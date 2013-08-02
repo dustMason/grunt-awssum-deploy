@@ -34,7 +34,6 @@ module.exports = function(grunt) {
 
     var defaults = {
       BucketName: options.bucket,
-      Acl: 'public-read',
       Acl: 'public-read'
     };
 
