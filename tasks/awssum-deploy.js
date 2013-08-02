@@ -12,6 +12,7 @@ var awssum = require('awssum'),
   path = require('path'),
   async = require('async'),
   amz = require('awssum-amazon'),
+  mime = require('mime'),
   AmazonS3 = require('awssum-amazon-s3').S3;
 
 module.exports = function(grunt) {
@@ -34,6 +35,7 @@ module.exports = function(grunt) {
     var defaults = {
       BucketName: options.bucket,
       Acl: 'public-read',
+      Acl: 'public-read'
     };
 
     var s3 = new AmazonS3({
@@ -75,6 +77,7 @@ module.exports = function(grunt) {
         var options = {
           BucketName: defaults.BucketName,
           Acl: defaults.Acl,
+          ContentType: mime.lookup(filepath),
           ObjectName: f.dest,
           ContentLength: src.length,
           Body: src
