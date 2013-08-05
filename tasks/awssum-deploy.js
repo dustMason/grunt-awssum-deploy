@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     if (options.access) { access = options.access; } else { access = 'public-read'; }
     delete options.access;
     if (options.connections) { connections = options.connections; } else { connections = 3; }
-    delete options.access;
+    delete options.connections;
 
     var defaults = {
       BucketName: options.bucket,

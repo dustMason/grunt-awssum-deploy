@@ -63,7 +63,7 @@ grunt.initConfig({
       files: [{
         expand: true,
         cwd: 'dist/',
-        src: '**/*.*',
+        src: '**/*.*', // note: you must not include directories
         dest: './'
       }]
     }
