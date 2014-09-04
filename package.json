@@ -1,7 +1,7 @@
 {
   "name": "grunt-awssum-deploy",
   "description": "Deploy your static files to S3",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/dustMason/grunt-awssum-deploy",
   "author": {
     "name": "Jordan Sitkin",
@@ -31,7 +31,8 @@
   "dependencies": {
     "awssum": "1.0",
     "awssum-amazon-s3": "1.0",
-    "async": "> 0.1.0"
+    "async": "> 0.1.0",
+    "mime": "~1.2.11"
   },
   "devDependencies": {},
   "peerDependencies": {
