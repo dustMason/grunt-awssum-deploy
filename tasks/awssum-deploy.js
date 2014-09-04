@@ -32,6 +32,14 @@ module.exports = function(grunt) {
     if (options.connections) { connections = options.connections; } else { connections = 3; }
     delete options.connections;
 
+    /**
+     * Setting process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0 will allow you
+     * to upload to an S3 bucket with a period (.) in it's name by skipping
+     * an Amazon security option that is enabled by default.
+     */
+    if (options.allow_dot_notation == true) { process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0 }
+    delete options.allow_dot_notation;
+
     var defaults = {
       BucketName: options.bucket,
       Acl: 'public-read'

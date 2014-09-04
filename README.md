@@ -44,6 +44,11 @@ Type: `Integer`
 
 How many concurrent connections to keep open while uploading to S3. Defaults to **3**.
 
+#### options.allow_dot_notation
+Type: `Boolean`
+
+Skip the Amazon security feature that prevents you from connecting to any bucket with a period (.) in its name. Must be set to `true` if you bucket name contains a period. Defaults to **false**.
+
 #### Note
 The project is based on [awssum](http://awssum.io), and uses code from a [gist](https://gist.github.com/chilts/3687910) by @chilts and @twhid.
 
